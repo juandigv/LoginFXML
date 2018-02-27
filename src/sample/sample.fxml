@@ -11,40 +11,41 @@
 <?import javafx.scene.text.Text?>
 
 <?import java.net.URL?>
- <GridPane fx:controller="sample.Controller"
-              xmlns:fx="http://javafx.com/fxml" alignment="center" hgap="10" vgap="10"
-              styleClass="root">
+<GridPane fx:controller="sample.Controller"
+          xmlns:fx="http://javafx.com/fxml" alignment="center" hgap="10" vgap="10"
+          styleClass="root">
 
     <stylesheets>
-        <URL value="@Login.css" />
+        <URL value="@Login.css"/>
     </stylesheets>
 
     <Text id="welcome-text" text="Welcome"
           GridPane.columnIndex="0" GridPane.rowIndex="0"
           GridPane.columnSpan="2"/>
 
-    <Label text="Usuario:" GridPane.columnIndex="0" GridPane.rowIndex="1" />
+    <Label text="Usuario:" GridPane.columnIndex="0" GridPane.rowIndex="1"/>
 
-    <TextField GridPane.columnIndex="1" GridPane.rowIndex="1" />
+    <TextField GridPane.columnIndex="1" GridPane.rowIndex="1"/>
 
-    <Label text="Contraseña:" GridPane.columnIndex="0" GridPane.rowIndex="2" />
+    <Label text="Contraseña:" GridPane.columnIndex="0" GridPane.rowIndex="2"/>
 
-    <PasswordField fx:id="passwordField" GridPane.columnIndex="1" GridPane.rowIndex="2" />
+    <PasswordField fx:id="passwordField" GridPane.columnIndex="1" GridPane.rowIndex="2"/>
     <HBox alignment="bottom_right" spacing="10" GridPane.columnIndex="1" GridPane.rowIndex="4">
-        <Button onAction="#handleSubmitButtonAction" text="Ingresar" />
+        <Button onAction="#handleSubmitButtonAction" text="Ingresar"/>
     </HBox>
-    <Text fx:id="actiontarget" GridPane.columnIndex="0" GridPane.columnSpan="2" GridPane.halignment="RIGHT" GridPane.rowIndex="6" />
-   <columnConstraints>
-      <ColumnConstraints maxWidth="75.0" minWidth="68.0" prefWidth="74.0" />
-      <ColumnConstraints maxWidth="144.0" minWidth="137.0" prefWidth="138.0" />
-   </columnConstraints>
-   <rowConstraints>
-      <RowConstraints />
-      <RowConstraints />
-      <RowConstraints />
-      <RowConstraints />
-      <RowConstraints />
-      <RowConstraints />
-      <RowConstraints />
-   </rowConstraints>
+    <Text fx:id="actiontarget" GridPane.columnIndex="0" GridPane.columnSpan="2" GridPane.halignment="RIGHT"
+          GridPane.rowIndex="6"/>
+    <columnConstraints>
+        <ColumnConstraints maxWidth="75.0" minWidth="68.0" prefWidth="74.0"/>
+        <ColumnConstraints maxWidth="144.0" minWidth="137.0" prefWidth="138.0"/>
+    </columnConstraints>
+    <rowConstraints>
+        <RowConstraints/>
+        <RowConstraints/>
+        <RowConstraints/>
+        <RowConstraints/>
+        <RowConstraints/>
+        <RowConstraints/>
+        <RowConstraints/>
+    </rowConstraints>
 </GridPane>
